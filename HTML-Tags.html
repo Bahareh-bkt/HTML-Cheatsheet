@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">  <!--this meta uses for ltr languages-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Different Tags in HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <!--A Dependent Website-->
+    <title>Different Tags in HTML</title>  <!--every website schould has a title, which read by search engines-->
 </head>
 <body>
-    <strong><a href="https://github.com/Bahareh-bkt" target="_blank">Visit my Github</a></strong>
+    <strong><h1 align="center"><a href="https://github.com/Bahareh-bkt" target="_blank">Visit my Github</a></h1></strong> <!--"a" Tag makes a Link-->
     <br>
+    <h2 align="center">Here we learn together the usage of Tags of HTML</h2>
     <form>
-        <fieldset>
-            <legend align="center">  FORMS   </legend>
-                    <label for="name">Name:</label>
+        <fieldset> <!--This Tag make a line around the Form-->
+            <legend align="center">  FORMS   </legend> <!--with this Tag you can write some text in the around line-->
+                    <label for="name">Name:</label> <!-- Lable Tag is for naming different parts-->
                     <input type="text" name="name" placeholder="your name" id="name" maxlength="40" autofocus>
                     <br><br>
                     <label for="email">Email*:</label>
-                    <input type="email" name="email" placeholder="your Email" id="email" required><input type="button" value="help" onclick="alert('Use @ for Email')">
+                    <input type="email" name="email" placeholder="your Email" id="email" required>  <!--"required" inputs cannot be empty bleiben-->
+                    <input type="button" value="help" onclick="alert('Use @ for Email')">
                     <br><br>
                     <label for="tel">Tel:</label>
                     <input type="tel" name="tel" placeholder="your Tel" id="tel">
@@ -28,11 +30,11 @@
                     <input type="radio" name="Gender" id="Female" value="Female">
                     <br><br>
                     <label for="file">Your picture: </label>
-                    <input type="file" name="file" id="file">
+                    <input type="file" name="file" id="file"> <!--"file" is used to get a file from user to upload it-->
                     <br><br>
                     <label>Which Country do you live?</label>
                     <select>
-                        <optgroup label="Europa">
+                        <optgroup label="Europa"> <!--with "optgroup" you can make special groups in your list-->
                             <option>Germany</option>
                             <option>Holand</option>
                             <option>Italy</option>
