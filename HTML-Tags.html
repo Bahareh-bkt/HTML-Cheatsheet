@@ -17,9 +17,10 @@
         <!--You can create a link that will give someone the opportunity to send an email to a specific email address-->
         <li><a href="mailto:bahareh4@gmail.com?subject=Hello%20again" target="_top">Contact me</a></li>
     </ul>
+    <!--How to create Forms ----------------------------------------------------------->
     <form>
         <fieldset> <!--This Tag make a line around the Form-->
-            <legend align="center">  FORMS   </legend> <!--with this Tag you can write some text in the around line-->
+            <legend align="center">  HOW TO CREATE FORMS   </legend> <!--with this Tag you can write some text in the around line-->
                     <label for="name">Name:</label> <!-- Lable Tag is for naming different parts-->
                     <input type="text" name="name" placeholder="your name" id="name" maxlength="40" autofocus>
                     <br><br>
@@ -76,12 +77,14 @@
                     <label for="terms">I havve read and accept the <dfn>Terms</dfn> & <dfn>Conditions</dfn></label>
                     <br><br>
                     <input type="submit" name="submit">
-                    <input type="reset" name="reset">   
+                    <input type="reset" name="reset"> 
+                    <br><br>  
         </fieldset>
     </form>
     <br><br>
     <form>
         <fieldset>
+            <br><br>
             <cite><abbr title="a German-born theoretical physicist">Albert Einschtein:</abbr></cite><span>“The true sign of intelligence is not knowledge but imagination."</span>
             <br><br>
             <span>Was that helpful?</span>
@@ -93,9 +96,14 @@
         </fieldset>
     </form>
     <br><br><br>
+
+    <!-------------------------------------------------------How to create Tables------------------------------------------------------>
+    <fieldset>
+        <legend align="center">HOW TO CREATE TABLES</legend>
+        <br><br><br><br>
     <table border="1" align="center" style="width: 40%;">
-        <caption>Status of Coursese</caption>
-        <colgroup align="center"></colgroup>
+        <caption>Status of Coursese</caption>                      <!-- <caption> shows the title of your table-->
+        <colgroup align="center"></colgroup>                       <!-- with <colgroup> you can change the attributes of cells in a coloumn-->
         <colgroup style="color:#df78ef ;"></colgroup>
         <tr>
             <th>Row</th>
@@ -106,7 +114,7 @@
         <tr align="center">
             <td>1</td>
             <td>HTML</td>
-            <td>32 h</td>
+            <td>32 h</td>                       <!-- <rowspan> strech the entire cell to the defined cell-->
             <th style="color:aliceblue"; rowspan="3" bgcolor="#ff77a9">Finished</th>
         </tr>
         <tr align="center">
@@ -141,6 +149,8 @@
         </tr>
 
     </table>
+    <br><br><br>
+</fieldset>
     <br<br><br>
     <!--<img src="assets\sampleIMG.jpg" alt="Sample Image" height="200" width="200">-->
 </body>
