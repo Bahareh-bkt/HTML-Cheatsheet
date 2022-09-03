@@ -9,8 +9,14 @@
 <!--very easy change the background of your website.Modern Browsers supported 140 colors which you can find in this website: https://htmlcolorcodes.com/color-names/-->
 <body style="background-color: rgb(245, 245, 245);">  
     <strong><h1 align="center"><a href="https://github.com/Bahareh-bkt" target="_blank">Visit my Github</a></h1></strong> <!--"a" element is used to add links to a webpage-->
-    <h2 align="center"><a href="mailto:bahareh4@gmail.com">Send Mail</a></h2> <!--You can create a link that will give someone the opportunity to send an email to a specific email address-->
-    <h3 align="center">Here we learn together the usage of Tags of HTML</h3>
+    <h2 align="center">Here we learn together the usage of Tags of HTML</h2>
+    <ul style="font-family: Arial; font-size:large;">  <!--You may also want to add lists to your webpage-->
+        <li>Forms</li>
+        <li>Images</li>
+        <li>lablab</li>
+        <!--You can create a link that will give someone the opportunity to send an email to a specific email address-->
+        <li><a href="mailto:bahareh4@gmail.com?subject=Hello%20again" target="_top">Contact me</a></li>
+    </ul>
     <form>
         <fieldset> <!--This Tag make a line around the Form-->
             <legend align="center">  FORMS   </legend> <!--with this Tag you can write some text in the around line-->
@@ -86,6 +92,56 @@
             <br><br>
         </fieldset>
     </form>
-    <img src="assets\sampleIMG.jpg" alt="Sample Image" height="200" width="200">
+    <br><br><br>
+    <table border="1" align="center" style="width: 40%;">
+        <caption>Status of Coursese</caption>
+        <colgroup align="center"></colgroup>
+        <colgroup style="color:#df78ef ;"></colgroup>
+        <tr>
+            <th>Row</th>
+            <th>Courses</th>
+            <th>Hour</th>
+            <th bgcolor="">Status</th>
+        </tr> 
+        <tr align="center">
+            <td>1</td>
+            <td>HTML</td>
+            <td>32 h</td>
+            <th style="color:aliceblue"; rowspan="3" bgcolor="#ff77a9">Finished</th>
+        </tr>
+        <tr align="center">
+            <td>2</td>
+            <td>CSS</td>
+            <td>51 h</td>
+            
+        </tr>
+        <tr align="center">
+            <td>3</td>
+            <td>JS</td>
+            <td>100 h</td>
+            
+        </tr>
+        <tr align="center">
+            <td>1</td>
+            <td>HTML</td>
+            <td>32 h</td>
+            <th rowspan="3" bgcolor="#b4004e">On performing</th>
+        </tr>
+        <tr align="center">
+            <td>2</td>
+            <td>CSS</td>
+            <td>51 h</td>
+            
+        </tr>
+        <tr align="center">
+            <td>3</td>
+            <td>JS</td>
+            <td>100 h</td>
+            
+        </tr>
+
+    </table>
+    <br<br><br>
+    <!--<img src="assets\sampleIMG.jpg" alt="Sample Image" height="200" width="200">-->
 </body>
 </html>
