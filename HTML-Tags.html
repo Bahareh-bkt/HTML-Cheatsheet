@@ -7,40 +7,44 @@
     <title>Different Tags in HTML</title>  <!--every website schould has a title, which read by search engines-->
 </head>
 <!--very easy change the background of your website.Modern Browsers supported 140 colors which you can find in this website: https://htmlcolorcodes.com/color-names/-->
-<body style="background-color: rgb(245, 245, 245);">  
-    <strong><h1 align="center"><a href="https://github.com/Bahareh-bkt" target="_blank">Visit my Github</a></h1></strong> <!--"a" element is used to add links to a webpage-->
-    <h2 align="center">Here we learn together the usage of Tags of HTML</h2>
-    <ul style="font-family: Arial; font-size:large;">  <!--You may also want to add lists to your webpage-->
-        <li>Forms</li>
-        <li>Images</li>
-        <li>lablab</li>
-        <!--You can create a link that will give someone the opportunity to send an email to a specific email address-->
-        <li><a href="mailto:bahareh4@gmail.com?subject=Hello%20again" target="_top">Contact me</a></li>
-    </ul>
-    <!--How to create Forms ----------------------------------------------------------->
-    <form>
-        <fieldset style="background-color:#ffffff ;"> <!--This Tag make a line around the Form-->
+<body style="background-color: rgb(245, 245, 245);"> 
+    <div> 
+        <div>
+            <strong><h1 align="center"><a href="https://github.com/Bahareh-bkt" target="_blank">Visit my Github</a></h1></strong> <!--"a" element is used to add links to a webpage-->
+            <h2 align="center">Here we learn together the usage of Tags of HTML</h2>
+            <ul style="font-family: Arial; font-size:large;">  <!--You may also want to add lists to your webpage-->
+                <li>Forms</li>
+                <li>Images</li>
+                <li>lablab</li>
+                <!--You can create a link that will give someone the opportunity to send an email to a specific email address-->
+                <li><a href="mailto:bahareh4@gmail.com?subject=Hello%20again" target="_top">Contact me</a></li>
+            </ul>
+        </div>
+    <!---------------------------------------How to create Forms ----------------------------------------------------------->
+        <div>
+            <form>
+            <fieldset style="background-color:#ffffff ;"> <!--This Tag make a line around the Form-->
             <legend align="center">  HOW TO CREATE FORMS   </legend> <!--with this Tag you can write some text in the around line-->
-                    <label for="name">Name:</label> <!-- Lable Tag is for naming different parts-->
+                <label for="name">Name:</label> <!-- Lable Tag is for naming different parts-->
                     <input type="text" name="name" placeholder="your name" id="name" maxlength="40" autofocus>
                     <br><br>
-                    <label for="email">Email*:</label>
+                <label for="email">Email*:</label>
                     <input type="email" name="email" placeholder="your Email" id="email" required>  <!--"required" inputs cannot be empty bleiben-->
                     <input type="button" value="help" onclick="alert('Use @ for Email')">
                     <br><br>
-                    <label for="tel">Tel:</label>
+                <label for="tel">Tel:</label>
                     <input type="tel" name="tel" placeholder="your Tel" id="tel">
                     <br><br>
-                    <label>Gender:</label>
+                <label>Gender:</label>
                     <label for="Male">Male</label>
                     <input type="radio" name="Gender" id="Male" value="Male" checked>
                     <label for="Female">Female</label>
                     <input type="radio" name="Gender" id="Female" value="Female">
                     <br><br>
-                    <label for="file">Your picture: </label>
+                <label for="file">Your picture: </label>
                     <input type="file" name="file" id="file"> <!--"file" is used to get a file from user to upload it-->
                     <br><br>
-                    <label>Which Country do you live?</label>
+                <label>Which Country do you live?</label>
                     <select>
                         <optgroup label="Europa"> <!--with "optgroup" you can make special groups in your list-->
                             <option>Germany</option>
@@ -62,154 +66,161 @@
                         </optgroup>
                     </select>
                     <br><br>
-                    <label for="color">Which color do you like for the Thems of your website?</label>
+                <label for="color">Which color do you like for the Thems of your website?</label>
                     <input type="color" name="color" id="color" placeholder="#ffffff">
                     <br><br>
-                    <label for="price">Your Boudget:</label>
+                <label for="price">Your Boudget:</label>
                     <label>200$</label>
                     <input type="range" name="price" id="price">
                     <label>1000$</label>
                     <br><br>
-                    <label>Your message:</label>
+                <label>Your message:</label>
                     <textarea width="500" height="700" maxlength="200"></textarea>
                     <br><br><br><br>
                     <input type="checkbox" name="terms" id="terms" checked>
-                    <label for="terms">I havve read and accept the <dfn>Terms</dfn> & <dfn>Conditions</dfn></label>
+                <label for="terms">I havve read and accept the <dfn>Terms</dfn> & <dfn>Conditions</dfn></label>
                     <br><br>
                     <input type="submit" name="submit">
                     <input type="reset" name="reset"> 
                     <br><br>  
-        </fieldset>
-    </form>
+            </fieldset>
+            </form>
+        </div>
     <br><br>
-    <form>
-        <fieldset style="background-color:#ffc4ff ;">
-            <br><br>
-            <cite><abbr title="a German-born theoretical physicist">Albert Einschtein:</abbr></cite><span>“The true sign of intelligence is not knowledge but imagination."</span>
-            <br><br>
-            <span>Was that helpful?</span>
-            <span>Yes</span>
-            <meter value="0.8">80%</meter>
-            <span>No</span>
-            <meter value="0.2">20%</meter>
-            <br><br>
-        </fieldset>
-    </form>
+        <div>
+            <form>
+                <fieldset style="background-color:#ffc4ff ;">
+                    <br><br>
+                    <cite><abbr title="a German-born theoretical physicist">Albert Einschtein:</abbr></cite><span>“The true sign of intelligence is not knowledge but imagination."</span>
+                    <br><br>
+                    <span>Was that helpful?</span>
+                    <span>Yes</span>
+                    <meter value="0.8">80%</meter>
+                    <span>No</span>
+                    <meter value="0.2">20%</meter>
+                    <br><br>
+                </fieldset>
+            </form>
+        </div>
     <br><br><br>
 
     <!-------------------------------------------------------How to create Tables------------------------------------------------------>
-    <fieldset style="background-color: #ffffff ;">
-        <legend align="center">HOW TO CREATE TABLES</legend>
-        <br><br><br><br>
-    <table border="1" align="center" style="width: 40%;">
-        <caption>Status of Coursese</caption>                      <!-- <caption> shows the title of your table-->
-        <colgroup align="center"></colgroup>                       <!-- with <colgroup> you can change the attributes of cells in a coloumn-->
-        <colgroup style="color:#df78ef ;"></colgroup>
-        <tr>
-            <th>Row</th>
-            <th>Courses</th>
-            <th>Hour</th>
-            <th bgcolor="">Status</th>
-        </tr> 
-        <tr align="center">
-            <td>1</td>
-            <td>HTML</td>
-            <td>32 h</td>                       <!-- <rowspan> strech the entire cell to the defined cell-->
-            <th style="color:aliceblue"; rowspan="3" bgcolor="#ff77a9">Finished</th>
-        </tr>
-        <tr align="center">
-            <td>2</td>
-            <td>CSS</td>
-            <td>51 h</td>
-            
-        </tr>
-        <tr align="center">
-            <td>3</td>
-            <td>JS</td>
-            <td>100 h</td>
-            
-        </tr>
-        <tr align="center">
-            <td>1</td>
-            <td>HTML</td>
-            <td>32 h</td>
-            <th rowspan="3" bgcolor="#b4004e">On performing</th>
-        </tr>
-        <tr align="center">
-            <td>2</td>
-            <td>CSS</td>
-            <td>51 h</td>
-            
-        </tr>
-        <tr align="center">
-            <td>3</td>
-            <td>JS</td>
-            <td>100 h</td>
-            
-        </tr>
+        <div>
+            <fieldset style="background-color: #ffffff ;">
+                <legend align="center">HOW TO CREATE TABLES</legend>
+                <br><br><br><br>
+            <table border="1" align="center" style="width: 40%;">
+                <caption>Status of Coursese</caption>                      <!-- <caption> shows the title of your table-->
+                <colgroup align="center"></colgroup>                       <!-- with <colgroup> you can change the attributes of cells in a coloumn-->
+                <colgroup style="color:#df78ef ;"></colgroup>
+                <tr>
+                    <th>Row</th>
+                    <th>Courses</th>
+                    <th>Hour</th>
+                    <th bgcolor="">Status</th>
+                </tr> 
+                <tr align="center">
+                    <td>1</td>
+                    <td>HTML</td>
+                    <td>32 h</td>                       <!-- <rowspan> strech the entire cell to the defined cell-->
+                    <th style="color:aliceblue"; rowspan="3" bgcolor="#ff77a9">Finished</th>
+                </tr>
+                <tr align="center">
+                    <td>2</td>
+                    <td>CSS</td>
+                    <td>51 h</td>
+                    
+                </tr>
+                <tr align="center">
+                    <td>3</td>
+                    <td>JS</td>
+                    <td>100 h</td>
+                    
+                </tr>
+                <tr align="center">
+                    <td>1</td>
+                    <td>HTML</td>
+                    <td>32 h</td>
+                    <th rowspan="3" bgcolor="#b4004e">On performing</th>
+                </tr>
+                <tr align="center">
+                    <td>2</td>
+                    <td>CSS</td>
+                    <td>51 h</td>      
+                </tr>
+                <tr align="center">
+                    <td>3</td>
+                    <td>JS</td>
+                    <td>100 h</td>             
+                </tr>
+            </table>
+            <br><br><br>
+            </fieldset>
+        </div>
+        <br<br><br>
 
-    </table>
-    <br><br><br>
-</fieldset>
-    <br<br><br>
                <!------------------------------------HOW TO CREATE LISTS---------------------------------->
-    <fieldset style="background-color:#ffc4ff ;">
-        <legend align="center">HOW TO CREATE lISTS</legend>
-        <br><br><br>
-        <ul>
-            <li> Hot Drinks
-                <ul style="list-style-type: disk;">   <!--use other <ul> to make a sublist-->
-                    <li>Tea</li>
-                    <li>Coffee</li>
-                    <li>Espresso</li>
+        <div>      
+            <fieldset style="background-color:#ffc4ff ;">
+                <legend align="center">HOW TO CREATE lISTS</legend>
+                <br><br><br>
+                <ul>
+                    <li> Hot Drinks
+                        <ul style="list-style-type: disk;">   <!--use other <ul> to make a sublist-->
+                            <li>Tea</li>
+                            <li>Coffee</li>
+                            <li>Espresso</li>
+                        </ul>
+                    </li>
+                    <li> Cold Drinks
+                        <ul style="list-style-type: circle;">
+                            <li>Water</li>
+                            <li>Orange Juice</li>
+                            <li>Cola</li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-            <li> Cold Drinks
-                <ul style="list-style-type: circle;">
-                    <li>Water</li>
-                    <li>Orange Juice</li>
-                    <li>Cola</li>
-                </ul>
-            </li>
-        </ul>
-        <br>
-        <ol type="A" start="2">     <!--with <start> you can assign the first step of OL-->
-            <li>Persian Foods
-                <ol type="a">       <!--use other <ol> to make a sublist-->
-                    <li>Kebab</li>
-                    <li>Ghormesabzi</li>
-                    <li>Tahchin</li>
+                <br>
+                <ol type="A" start="2">     <!--with <start> you can assign the first step of OL-->
+                    <li>Persian Foods
+                        <ol type="a">       <!--use other <ol> to make a sublist-->
+                            <li>Kebab</li>
+                            <li>Ghormesabzi</li>
+                            <li>Tahchin</li>
+                        </ol>
+                    </li>
+                    <li>Italian Foods
+                        <ol type="a">
+                            <li>Spagetti</li>
+                            <li>Pizza</li>
+                            <li>Pachini</li>
+                        </ol>
+                    </li>
                 </ol>
-            </li>
-            <li>Italian Foods
-                <ol type="a">
-                    <li>Spagetti</li>
-                    <li>Pizza</li>
-                    <li>Pachini</li>
-                </ol>
-            </li>
-        </ol>
-    </fieldset>
+            </fieldset>
+        </div> 
     <br><br>
                           <!---------------------------HOW TO USE IMAGES----------------------------->
-    <fieldset>
-        <legend align="center">HOW TO USE IMAGES</legend>
-        <!--<img> is an oppening tag with some attributes, <src> as source of image, <alt> as alternative text when the image dosnt show-->
-        <figure> <!--when we use a <figcaption>, we should use <figure> to be sure they are allways together-->
-        <img src="assets/Deutschland.jpg" alt="GermanMap" title="Different United of Germany" usemap="#GermanMap">
-        <figcaption> The map shows Germany and its federal states</figcaption>
-            <map name="GermanMap">
-            <!--with the <map> you can link different parts of a picture like a country map-->
-            <!-- Image Map Generated by http://www.image-map.net/ -->
-            <!--to use this site at first you should change the size of your picture and in the img do not use 'width'-->
-                <area target="_blank" alt="Baden-Württemberg" title="Baden-Württemberg" href="https://en.wikipedia.org/wiki/Baden-W%C3%BCrttemberg" coords="417,744,286,930" shape="rect">
-                <area target="_blank" alt="Bayern" title="Bayern" href="https://en.wikipedia.org/wiki/Bayern_(disambiguation)" coords="706,642,451,962" shape="rect">
-                <area target="_blank" alt="Nordrein-Westfalen" title="Nordrein-Westfalen" href="https://en.wikipedia.org/wiki/North_Rhine-Westphalia" coords="231,454,102" shape="circle">
-                <area target="_blank" alt="Berlin" title="Berlin" href="https://en.wikipedia.org/wiki/Berlin" coords="700,344,91" shape="circle">
-                <area target="_blank" alt="Niedersachsen" title="Niedersachsen" href="https://de.wikipedia.org/wiki/Niedersachsen" coords="377,268,115" shape="circle">
-            </map>
-        </figure>
-    </fieldset>
-   
+        <div>                  
+            <fieldset>
+                <legend align="center">HOW TO USE IMAGES</legend>
+                <!--<img> is an oppening tag with some attributes, <src> as source of image, <alt> as alternative text when the image dosnt show-->
+                <figure> <!--when we use a <figcaption>, we should use <figure> to be sure they are allways together-->
+                <img src="assets/Deutschland.jpg" alt="GermanMap" title="Different United of Germany" usemap="#GermanMap">
+                <figcaption> The map shows Germany and its federal states</figcaption>
+                    <map name="GermanMap">
+                    <!--with the <map> you can link different parts of a picture like a country map-->
+                    <!-- Image Map Generated by http://www.image-map.net/ -->
+                    <!--to use this site at first you should change the size of your picture and in the img do not use 'width'-->
+                        <area target="_blank" alt="Baden-Württemberg" title="Baden-Württemberg" href="https://en.wikipedia.org/wiki/Baden-W%C3%BCrttemberg" coords="417,744,286,930" shape="rect">
+                        <area target="_blank" alt="Bayern" title="Bayern" href="https://en.wikipedia.org/wiki/Bayern_(disambiguation)" coords="706,642,451,962" shape="rect">
+                        <area target="_blank" alt="Nordrein-Westfalen" title="Nordrein-Westfalen" href="https://en.wikipedia.org/wiki/North_Rhine-Westphalia" coords="231,454,102" shape="circle">
+                        <area target="_blank" alt="Berlin" title="Berlin" href="https://en.wikipedia.org/wiki/Berlin" coords="700,344,91" shape="circle">
+                        <area target="_blank" alt="Niedersachsen" title="Niedersachsen" href="https://de.wikipedia.org/wiki/Niedersachsen" coords="377,268,115" shape="circle">
+                    </map>
+                </figure>
+            </fieldset>
+        </div>
+    </div>   
 </body>
 </html>
